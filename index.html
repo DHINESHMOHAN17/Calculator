@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="images/Calculator_icon.svg.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <form>
+                <div class="display">
+                    <input type="text" name="display">
+                </div>
+                <div>
+                    <input type="button" value="AC" onclick="clearTheCalcalution()">
+                    <input type="button" value="DL" onclick="deleted()">
+                    <input type="button" value="." onclick="displaying('.')">
+                    <input type="button" value="/" onclick="displaying('/')">
+                </div>
+                <div>
+                    <input type="button" value="7" onclick="displaying('7')">
+                    <input type="button" value="8" onclick="displaying('8')">
+                    <input type="button" value="9" onclick="displaying('9')">
+                    <input type="button" value="*" onclick="displaying('*')"> 
+                </div>
+                <div>
+                    <input type="button" value="4" onclick="displaying('4')">
+                    <input type="button" value="5" onclick="displaying('5')">
+                    <input type="button" value="6" onclick="displaying('6')">
+                    <input type="button" value="-" onclick="displaying('-')">
+                </div>
+                <div>
+                    <input type="button" value="1" onclick="displaying('1')">
+                    <input type="button" value="2" onclick="displaying('2')">
+                    <input type="button" value="3" onclick="displaying('3')">
+                    <input type="button" value="+" onclick="displaying('+')">
+                </div>
+                <div>
+                    <input type="button" value="00" onclick="displaying('00')">
+                    <input type="button" value="0" onclick="displaying('0')">
+                    <input type="button" value="=" onclick="result()">
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="index.js"> </script>
+</body>
+</html>
