@@ -16,8 +16,12 @@ function deleted(){
 
 }
 function result(){
+    try{
     calculation=eval(calculation);
-    ondisplay();
+    ondisplay();}
+    catch(err){
+        alert("Invalid Calculation");
+    }
 
 }
 function ondisplay(){
