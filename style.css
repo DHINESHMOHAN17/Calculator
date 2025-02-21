@@ -44,3 +44,6 @@ form .display {
 input[value="="] {
   width: 140px;
 }
+.operator {
+    color:rgb(255, 21, 0)
+}
